@@ -1,3 +1,8 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\MainController::index
+
+add_measurement:
+    path: /add/{api_key}
+    controller: App\Controller\MainController::addMeasurement
+    methods: [POST]
